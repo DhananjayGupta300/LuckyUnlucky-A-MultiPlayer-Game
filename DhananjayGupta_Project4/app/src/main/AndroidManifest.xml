@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dhananjaygupta.dhananjaygupta_project4">
+
+    <application
+
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".GameActivity">
+
+            android:parentActivityName=".StartingActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dhananjaygupta.dhananjaygupta_project4.StartingActivity" />
+
+        </activity>
+
+        <activity android:name=".StartingActivity">
+
+            <intent-filter>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
